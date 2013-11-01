@@ -1,0 +1,12 @@
+MAS prj_Cardapio_RU_Uece {
+
+	infrastructure: Centralised
+
+	environment: c4jason.CartagoEnvironment
+
+	agents:
+		linguini linguini agentArchClass c4jason.CAgentArch;
+
+	aslSourcePath:
+		"src/asl";
+}
