@@ -24,7 +24,7 @@ menu_p2("").
  	!monitoring.  		
  	 	
  +!monitoring: true <-
-   println("Esperando: ",(1000 * 60)/60000, " minutos");
+    println("Esperando um dia por outros dados....");
  	.wait(((1000 * 60) * 60 ) * 24);   //24 horas segundos
  	!notification.
  	

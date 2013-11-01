@@ -62,7 +62,7 @@ public class EnvironmentWeb extends Artifact {
 	
 	@INTERNAL_OPERATION
 	void processResults(Document d){
-		for (Element e : d.getElementsByClass("ru_head_title")){
+		for (Element e : d.getElementsByClass("ru_head_title")){			
 			getObsProperty("day").updateValue(e.children().get(0).text());
 			
 			if (e.nextElementSibling().children().get(0).text().length() > 139){
@@ -72,9 +72,8 @@ public class EnvironmentWeb extends Artifact {
 			else{
 				getObsProperty("menu_p1").updateValue(e.nextElementSibling().children().get(0).text().substring(0));
 				getObsProperty("menu_p2").updateValue("");
-			}
-				
-			await_time(10);
+			}				
+			await_time(5000);
 		}			
 	}		
 }
